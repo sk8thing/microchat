@@ -1,0 +1,19 @@
+{
+  "name": "microchat",
+  "version": "1.0.0",
+  "description": "Basic chat webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon index.js"
+  },
+  "keywords": [],
+  "author": "sk8thing",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "hashmap": "^2.4.0",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1"
+  }
+}

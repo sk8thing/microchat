@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>&#181Chat</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="app">
+            <div class="container join active">
+                <header class="join_header">
+                    <h1>Welcome to &#181Chat</h1>
+                </header>
+                <main class="join_main">
+                    <form class="join_form">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter username..." required maxlength="24">
+                        <button id="join_user">Start chatting</button>
+                    </form>
+                </main>
+            </div>
+            <div class="container chat">
+                <header class="chat_header">
+                    <h1>&#181Chat</h1>
+                </header>
+                <main class="chat_box">
+                    <div class="chat_sidebar">
+                        <h3>Users</h3>
+                        <ul id="users"></ul>
+                    </div>
+                    <div class="chat_window"></div>
+                </main>
+                <div class="chat_form_container">
+                    <form class="chat_form">
+                        <label class="chat_label">
+                            <input type="text" id="message" placeholder="Enter message..." maxlength="255"/>
+                        </label>
+                        <button id="send_message">&#171</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</html>
